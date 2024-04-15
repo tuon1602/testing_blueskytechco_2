@@ -389,7 +389,29 @@ body {
    .divider_2{
     margin:80px 255px 35px 255px; width: 100%; border: 1px solid #EBEBEB;
    }
+   .trending_card_image{
+    transition: all 0.5s ease-in-out;
+   overflow: hidden;
+   }
+   
 
+  .trending_card_image:hover{
+    transform: translateY(-10px);
+  }
+  .trending_2_card_image{
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  .trending_2_card_image:hover{
+    transform: translateY(-10px);
+  }
+  .gram_card{
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  .gram_card:hover{
+    transform: translateY(-10px);
+  }
 @media only screen and (max-width: 640px) {
    .signin_ad{
     display: none;
