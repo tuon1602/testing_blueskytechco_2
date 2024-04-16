@@ -1,22 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    text-decoration: none;
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-a {
-    color: inherit;
-    /* Inherit the color from its parent */
-    text-decoration: none;
-    /* Remove underline */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    font-family: "Jost", sans-serif;
+	line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* main */
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+
+body,button  {
+    font-family: "Jost", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -74,7 +114,11 @@ body {
 .header_navigation {
     display: flex;
     gap: 30px;
-    margin-left: 120px;
+    margin-left:114px;
+    width: 588px;
+    height: 23px;
+    align-items: center;
+    line-height: 23.12px;
 }
 
 .header_icons {
@@ -88,7 +132,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 .hero_1{
     min-height: 850px;
@@ -100,8 +144,9 @@ body {
 }
 .hero_1_card{
     position: absolute;
-    top:30%;
-    left: 20%;
+    top:271px;
+    bottom: 271px;
+    left: 22.063rem;
     color: #111111;
     display: flex;
     flex-direction: column;
@@ -117,28 +162,34 @@ body {
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
+    font-weight: 500;    
+    line-height: 23.12px;
+    color: #111111;
 }
 .hero_1_button{
     margin-top: 50px;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 600px;
+    font-weight: 700px;
     color:white;
     background-color: #111111;
     padding: 19px 56.5px;
     text-align: center;
     border-radius: 30px;
+    line-height: 17.34px;
+    max-height: 55px;
 }
 .hero_1_previous,.hero_1_next{
     width: 60px;
     height: 60px;
     border: 1px solid #EBEBEB;
-    border-radius: 999px
+    border-radius: 999px;
+    position: absolute;
+    top: 395px;
+    bottom: 395px;
 }
 .hero_1_previous{
     background-color: white;
-    position: absolute;
-    top: 50%;
     left: 30px;
     display: flex;
     justify-content: center;
@@ -146,8 +197,6 @@ body {
 }
 .hero_1_next{
     background-color: black;
-    position: absolute;
-    top: 50%;
     right: 30px;
     display: flex;
     justify-content: center;
@@ -157,7 +206,7 @@ body {
     display:flex;
     position: absolute;
     right:50%;
-    bottom:5%;
+    bottom:30px;
     transform: translateX(50%);
     gap:10px
 }
@@ -177,8 +226,9 @@ body {
 
 .category{
     margin-top: 5px;
-    display:grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    /* display:grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr)); */
+    display: flex;
     height: 705px;
     gap: 5px;
 }
@@ -187,6 +237,7 @@ body {
     height: inherit; /* Set a specific height for the container */
     grid-column: span 2 / span 2;
     position: relative;
+    width: 560px;
 }
 
 .category_container img {
@@ -200,6 +251,7 @@ body {
     display: flex; 
     flex-direction: column;
     gap: 5px;
+    width: 790px;
 }
 .category_middle_top{
     width: 100%; /* Ensure the image fills the width of its container */
@@ -219,19 +271,32 @@ body {
 
 .category_button{
     font-size: 16px;
-    font-weight: 700;
-    padding: 19.5px 74px;
-    color: black;
+    font-weight: 500;
+    color: #111111;
     border-radius: 30px;
     background-color: white;
     position: absolute;
-    bottom: 5%;
+    bottom: 30px;
     right:50%;
     transform: translateX(50%);
+    border: 0;
+    line-height: 23.12px;
+    width: 180px;
+    
+}
+.category_button_1{
+    padding: 13.5px 74px;
+}
+.category_button_2{
+    padding: 13.5px 51px;
+}
+.category_button_5{
+    padding: 13.5px 61.5px;
 }
 
 .container{
     margin: 100px 255px 0px 255px;
+    width: 1410px;
 }
 
 .trending{
@@ -239,7 +304,7 @@ body {
 }
 .trending_cards{
     text-align: start;
-    margin-top: 40px;
+    margin-top: 43px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
@@ -248,7 +313,7 @@ body {
     margin-top: 16px;
     display:flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 .trending_card_info > h2{
     font-weight: 500;
@@ -292,7 +357,7 @@ body {
 }
 
 .gram_cards{
-    margin-top: 40px;
+    margin-top: 44px;
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 5px;
@@ -305,8 +370,10 @@ body {
     font-size: 45px;
     color: #111111;
     font-weight: 400;
+    line-height: 65.03px;
 }
 .title_des{
+    margin-top: 9px;
     font-size: 16px;
     color: #555555;
 }
@@ -317,6 +384,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    line-height: 23.12px    ;
 }
 
 .footer_content_1{
@@ -338,13 +406,14 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 25px;
+    font-weight: 600;
 }
 .footer_anchors{
     display: flex;
     flex-direction: column;
     color:#555555;
     font-size: 16px;
-    gap: 10px;
+    gap: 15px;
 }
 .email_form{
     margin-top: 25px;
@@ -378,20 +447,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .header_mobile_menu{
     display: none;
 }
 .divider_1{
     width: 100%;
     border:1px solid #EBEBEB;
-    margin: 50px 0 50px 0;
+    margin: 99px 0 98px 0;
    }
    .divider_2{
     margin:80px 255px 35px 255px; width: 100%; border: 1px solid #EBEBEB;
    }
    .trending_card_image{
+   
     transition: all 0.5s ease-in-out;
    overflow: hidden;
+   }
+   .trending_card_image > img{
+    width: 100%;
+    object-fit: contain;
    }
    
 
