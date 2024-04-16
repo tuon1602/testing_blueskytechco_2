@@ -636,18 +636,20 @@ button {
     transform: translateY(-10px);
 }
 
-.feature{
+.feature {
     display: none;
 }
-.trending_transitions{
+
+.trending_transitions {
     display: none;
 }
-.feedback{
+
+.feedback {
     display: none;
 }
 
 @media only screen and (max-width: 640px) {
- 
+
     .signin_ad {
         display: none;
     }
@@ -704,11 +706,12 @@ button {
     }
 
     .hero_1_card {
-        top:176px;
+        top: 176px;
         bottom: 171px;
         left: 21px
     }
-    .hero_1_dots{
+
+    .hero_1_dots {
         bottom: 20px;
     }
 
@@ -737,12 +740,13 @@ button {
         width: calc(100% - 40px);
     }
 
-    .feature{
+    .feature {
         display: block;
         text-align: center;
         margin-top: 30px;
     }
-    .feature_cards{
+
+    .feature_cards {
         margin-top: 25px;
         display: grid;
         grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -750,34 +754,41 @@ button {
         gap: 20px;
         height: 464px;
     }
-    .feature_card{
+
+    .feature_card {
         width: 100%;
         grid-column: span 1 / span 1;
         position: relative;
     }
-    .feature_card_1{
+
+    .feature_card_1 {
         grid-row: span 2 / span 2;
     }
-    .feature_card_2{
-        grid-row: span 1 / span 1   ;
-    }
-    .feature_card_3{
-        grid-row: span 2 / span 2 
-    }
-    .feature_card_4{
+
+    .feature_card_2 {
         grid-row: span 1 / span 1;
     }
-    .feature_card>img{
+
+    .feature_card_3 {
+        grid-row: span 2 / span 2
+    }
+
+    .feature_card_4 {
+        grid-row: span 1 / span 1;
+    }
+
+    .feature_card>img {
         width: 100%;
         object-fit: cover;
         height: 100%;
         border-radius: 10px;
-        
+
     }
-    .feature_button{
+
+    .feature_button {
         position: absolute;
         bottom: 20px;
-        right:50%;
+        right: 50%;
         transform: translateX(50%);
         font-size: 16px;
         font-family: "Jost";
@@ -795,15 +806,18 @@ button {
         line-height: 52.02px;
         color: #111111;
         font-weight: 400;
-        
+
     }
-    .title_des{
+
+    .title_des {
         font-size: 16px;
         line-height: 23.12px;
         font-weight: 500;
         margin-top: 5px;
     }
-    .trending,.recommendation{
+
+    .trending,
+    .recommendation {
         margin-top: 58px;
     }
 
@@ -821,11 +835,12 @@ button {
         border-radius: 10px;
     }
 
-    
+
     .trending_2_card {
         grid-column: span 3 / span 3;
         position: relative;
     }
+
     .trending_2_card_info {
         position: absolute;
         bottom: 30px;
@@ -835,20 +850,23 @@ button {
     .trending_2_card_image>img {
         width: 100%;
     }
-    .trending_transitions{
+
+    .trending_transitions {
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        gap:10px
+        gap: 10px
     }
-    .trending_transitions_previous, .trending_transitions_next{
+
+    .trending_transitions_previous,
+    .trending_transitions_next {
         width: 38px;
         height: 38px;
         border: 1px solid #EBEBEB;
         border-radius: 999px;
         display: flex;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
     }
 
     .divider_1 {
@@ -857,7 +875,7 @@ button {
         margin: 50px 0 50px 0;
     }
 
-    .feedback_card{
+    .feedback_card {
         height: 290px;
         border: 1px solid #EBEBEB;
         border-radius: 10px;
@@ -872,10 +890,14 @@ button {
         width: 100%;
     }
 
-    .footer,
     .footer_2 {
         margin: 30px 20px 0 20px;
         flex-direction: column;
+    }
+    .footer{
+        margin: 60px 20px 0 20px;
+        flex-direction: column;
+        gap:25px
     }
 
     .footer_content_1,
@@ -888,10 +910,38 @@ button {
     .divider_2 {
         margin: 40px 20px 30px 20px;
         border: 1px solid #EBEBEB;
-        width: 100%;
+        width: calc(100% - 40px);
     }
 
     .footer_2 {
         gap: 10px;
+        padding-bottom: 75px;
+    }
+    .footer_heading{
+        margin-bottom: 20px;
+    }
+
+    .bottom_navigation {
+        position: fixed;
+        bottom: 0;
+        width: calc(100% - 44px);
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(5,minmax(0,1fr));
+        align-items: center;
+        height: 75px;
+        padding: 0 22px;
+
+    }
+
+    .bottom_align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        white-space: nowrap;
+        font-size: 12px;
+        width: 100%;
+        font-weight: bold;
     }
 }
