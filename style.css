@@ -647,6 +647,9 @@ button {
 .feedback {
     display: none;
 }
+.bottom_navigation{
+    display: none;
+}
 
 @media only screen and (max-width: 640px) {
 
